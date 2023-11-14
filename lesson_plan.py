@@ -8,7 +8,6 @@ from main_bot import insert_into_data_table
 import openai
 from authenticate import return_api_key
 from datetime import datetime
-from k_map import generate_mindmap, output_mermaid_diagram
 import configparser
 import os
 import ast
