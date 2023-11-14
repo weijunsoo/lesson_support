@@ -211,7 +211,7 @@ def main():
 		with st.sidebar: #options for sidebar
 			
 			if st.session_state.login == False:
-				st.image("cotf_logo.png")
+				st.image("Fuhua.jpeg")
 				st.session_state.option = menu([MenuItem('Users login', icon='people')])
 			else:
 				#can do a test if user is school is something show a different logo and set a different API key
@@ -234,7 +234,6 @@ def main():
 						sac.MenuItem(return_function_name('Lesson Design Facilitator',LESSON_BOT), icon='chat-text', disabled=is_function_disabled('Lesson Design Facilitator')),
 						sac.MenuItem(return_function_name('Lesson Collaborator',LESSON_COLLAB), icon='pencil-square', disabled=is_function_disabled('Lesson Collaborator')),
 						sac.MenuItem(return_function_name('Lesson Commentator',LESSON_COMMENT), icon='chat-left-dots', disabled=is_function_disabled('Lesson Commentator')),
-						sac.MenuItem(return_function_name('Lesson Designer Map', LESSON_MAP), icon='diagram-2', disabled=is_function_disabled('Lesson Designer Map')),
 						
 					]),
 					sac.MenuItem('Dialogic Agent', icon='robot', children=[
