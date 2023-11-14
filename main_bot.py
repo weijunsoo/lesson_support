@@ -7,11 +7,6 @@ from langchain.memory import ConversationSummaryBufferMemory
 from langchain.memory import ConversationBufferWindowMemory
 from langchain.chat_models import ChatOpenAI
 import streamlit_antd_components as sac
-from k_map import (
-	map_prompter_with_plantuml,
-	generate_plantuml_mindmap,
-	render_diagram
-)
 import configparser
 import os
 config = configparser.ConfigParser()
